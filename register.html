@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Register</title>
+  <style>
+    body { font-family: Arial; background: #abdcea; display:flex; align-items:center; justify-content:center; height:100vh; margin:0; }
+    .container { background:#fff; padding:24px; border-radius:8px; width:340px; box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    input, button { width:100%; padding:10px; margin:8px 0; border-radius:6px; }
+    button { background:#007bff; color:#fff; border:none; cursor:pointer; }
+    .icon-close{
+        position: relative;
+        top: 0;
+        right: 6px;
+        width: 45px;
+        height: 45px;
+        font-size: 4em;
+        color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 300px;
+        margin-top: 5px;
+
+        }
+        .hidden{
+          display: none;
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <h3 style="text-align:center">Create account</h3>
+    <input id="username" placeholder="Username" />
+    <input id="password" type="password" placeholder="Password" />
+    <button id="regBtn"><a href="dashboard.html">Register</a></button>
+    <p style="text-align:center; margin-top:10px">Have an account? <a href="login.html">Login</a></p>
+  </div>
+
+</body>
+</html>
