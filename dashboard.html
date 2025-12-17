@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<style>
+/* ===== BODY ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #abdcea;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 14px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 200px;
+}
+
+.menu {
+  display: flex;
+  gap: 100px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.logout {
+  margin-left: auto;
+  color: purple;
+  cursor: pointer;
+}
+
+/* ===== DASHBOARD LAYOUT ===== */
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+
+/* LEFT SIDE */
+.left-section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== PROFILE CARD ===== */
+.card {
+  width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.row {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ===== ACTION CARD ===== */
+.action-card {
+  width: 500px;
+  margin-top: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actions button:hover {
+  background: #0056b3;
+}
+
+/* ===== RIGHT IMAGE ===== */
+.doctor-card img {
+  width: 400px;
+  height: 500px;
+  margin-top: 10px;
+  
+}
+</style>
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav>
+  <div class="logo">💚 LIFE LINE</div>
+  <div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About us</a>
+    <a href="#">Reports</a>
+    <a href="#">Consultations</a>
+  </div>
+  <div class="logout"><a href="index.html">Logout</a></div>
+</nav>
+
+<!-- ===== DASHBOARD ===== -->
+<div class="dashboard">
+
+  <!-- LEFT SIDE -->
+  <div class="left-section">
+
+    <!-- PROFILE CARD -->
+    <div class="card">
+      <h2>Welcome,Alif <span id="wname"></span> 👋</h2>
+      <div class="row">Name:Alif <span id="name"></span></div>
+      <div class="row">Age:30 <span id="age"></span></div>
+      <div class="row">Disease:Diabetes <span id="disease"></span></div>
+      <div class="row">Precautions: Avoid sugar and do Exercise<span id="precautions"></span></div>
+    </div>
+
+    <!-- ACTION CARD -->
+    <div class="action-card">
+      <h3>Patient Actions</h3>
+      <div class="actions">
+        <button>Upload Precautions</button>
+        <button>Reminder</button>
+        <button>Video Consultation</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE IMAGE -->
+  <div class="doctor-card">
+    <img src="C:\Users\yamuna\Desktop\css\healthcare\doctor.jpg" class="rounded-circle" alt="Doctor">
+  </div>
+
+</div>
+
+</body>
+</html>
